@@ -1,0 +1,58 @@
+<script>
+
+/*
+Name: Dane Winkelman
+2/2/15
+Comments
+*/
+
+
+
+
+
+var FirstName = "dane",
+   LastName = "winkelman",
+   Mode = "",           
+   Change = "",          
+   HoursOfSleep = "",
+   Awoken = "",
+   Emails = "",
+   Feels = "",
+   msg = "";
+
+Change = prompt("How much change did you get?")
+HoursOfSleep = prompt("How many hours of sleep did you get?")
+Mode = prompt("How did you get here?")
+
+msg = "Hello " + FirstName + " " + LastName + ".";
+
+if (Mode == "walk"){
+    msg += "\nI hope your walk was gorgeous!"
+}
+else {
+    msg += "\nI hope your" +" "+ Mode + " " +"was enjoyable."
+    
+}
+if (Change > .25 && Change < 2){
+    msg += "\nCould I have a quarter for a call?"
+}
+else if (Change >= 2){
+    msg += "\n" + Change;
+}
+
+if (HoursOfSleep <= 2){
+    msg += "\nOuch, don't hurt yourself, get some sleep."
+}
+else if (HoursOfSleep >= 2 && HoursOfSleep <= 6 ){
+    msg += "\nGo push chairs today, that's less brainpower."
+}
+else if (HoursOfSleep >6 &&  HoursOfSleep < 10 ){
+    msg += "\nYou're our brainpower!"
+}
+
+
+
+
+console.log(msg) 
+
+</script>
